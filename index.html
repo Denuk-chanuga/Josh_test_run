@@ -33,12 +33,12 @@
   <button onclick="googleLogin()">Login with Google</button>
 
 const firebaseConfig = {
-   apiKey: "AIzaSyBRFxmrW90dD7PT8M3EKpufrhBupC679JM",
-   authDomain: "algae-product-test-josh.firebaseapp.com",
-   projectId: "algae-product-test-josh",
-   storageBucket: "algae-product-test-josh.firebasestorage.app",
-   messagingSenderId: "972728187304",
-   appId: "1:972728187304:web:f3751ae439a1364dd0059d"
+  apiKey: "AIzaSyBRFxmrW90dD7PT8M3EKpufrhBupC679JM",
+  authDomain: "algae-product-test-josh.firebaseapp.com",
+  projectId: "algae-product-test-josh",
+  storageBucket: "algae-product-test-josh.firebasestorage.app",
+  messagingSenderId: "972728187304",
+  appId: "1:972728187304:web:f3751ae439a1364dd0059d"
 };
 
     firebase.initializeApp(firebaseConfig);
@@ -58,7 +58,7 @@ const firebaseConfig = {
             time: new Date().toISOString()
           });
 
-          window.location.href = "https://example.com/methodology/product01.html"; // Change this!
+          window.location.href = "https://aquaticproduct.sitelium.site/test"; // Change this!
         })
         .catch(err => {
           alert("Login failed: " + err.message);
