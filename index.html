@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +31,7 @@
   <p>Login with your Google Account to continue</p>
   <button onclick="googleLogin()">Login with Google</button>
 
+  <!-- ✅ JavaScript Firebase Configuration and Logic -->
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyBRFxmrW90dD7PT8M3EKpufrhBupC679JM",
@@ -42,6 +42,7 @@
       appId: "1:972728187304:web:f3751ae439a1364dd0059d"
     };
 
+    // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     const db = firebase.database();
 
@@ -59,8 +60,8 @@
             time: new Date().toISOString()
           });
 
-          // ✅ Redirect to your real Methodology Page
-          window. location.href = "https://aquaticproduct.sitelium.site/test";
+          // ✅ Redirect after login
+          window.location.href = "https://aquaticproduct.sitelium.site/test";
         })
         .catch(err => {
           alert("Login failed: " + err.message);
